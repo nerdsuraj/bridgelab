@@ -1,0 +1,39 @@
+step1- created a directory stage1-review.
+
+step2- created files (day4.sh,x.java,y.py,z.js, algorithm.txt) inside stage1-review directory.
+
+step3- uses nano day4.sh to do editing/modification for given condition
+
+step4- inside day4.sh scripting file uses for loop for given condition
+        (nano day4.sh)
+
+step5- using for loop to read each file and to display files with x.java,y.py,z.js
+        (for files in `ls *.java` ls *.py` ls *.js
+
+step 6- Create a new folder with same name as a file-name
+               Expected Result : x/  y/  z/ 
+
+step7- create sub-folder as per your file-extension-names 
+			Expected Result : java/py/js
+
+step8 - cut a original file & paste into a specific subfolder 
+			Expected Result :      java/x.java
+						py/y.py
+						js/z.js 
+
+
+
+
+for files in `ls *.java` `ls *.py` `ls *.js`
+
+do
+      folderName=`echo $files | awk -F. '{print $1}'`
+      folderName2=`echo $files | awk -F. '{print $2}'`
+      mkdir -p $folderName/$folderName2
+      mv $files $folderName/$folderName2
+done
+
+
+
+
+       
