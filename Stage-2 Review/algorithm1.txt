@@ -1,0 +1,50 @@
+step:-1
+first we have to take three numbers from user
+
+step:-2
+then put into in array index
+
+step3:-
+after that i just show them thats its your original number with the help of arr
+
+step4:-
+i iterate the value of for ((i = 0; i<4; i++)) then comes into the another loop part,
+
+step5:-
+here i just iterate the j value for ((j = 0; j<4-i-1; j++) and check that j value come under the circumstance or not
+
+step6:-
+then i put if part inside the 2nd for loop if [ ${arr[j]} -gt ${arr[$((j+1))]} ] and check that arr j is greter then from arr j+1
+
+ste7:-
+ temp=${arr[j]}, store the arr j value in temp variable
+
+ste8:-
+ arr[$j]=${arr[$((j+1))]}, store the arr j +1 value in only in arr j
+
+step9:-
+now its comes the 2nd part of the question is accending the order
+
+step10:-
+for ((i = 0; i<4; i++)) , check the i value is less then from 4 then is comes to the under part of the loop
+
+step11 :- 
+for((j=0; j<4-i-1; j++)) , inside the for loop i also check that whether j value is less then 4-i-1
+
+step12:-
+
+then after 2nd loopi just put if condition to check the whether arr j value is less than from arr j+1
+
+if [ ${arr[j]} -lt ${arr[$((j+1))]} ]
+
+
+step13:-
+step 13 is just like the step 7 and step 8 just check at above.
+
+step14:-
+then after step 13 we tring to solve the decending part of the array with ${arr[@]}
+.
+
+result:-thats how we make the arry ascendig and decending order.
+
+
